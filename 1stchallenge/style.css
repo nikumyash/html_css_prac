@@ -1,0 +1,266 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+.logo{
+    color:white;
+    font-size: 1.5rem;
+    display: flex;
+}
+.logo-main-text{
+    padding: 0 0.7rem;
+}
+.logo-main-text svg{
+    height: 2rem;
+}
+.logo-sub-text{
+    padding:0 0.7rem;
+    padding-top: 0.3rem;
+    border-left: solid 0.15rem white;
+}
+
+.logo-sub-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.submit-req-button{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.7rem 1.5rem;
+    border: white solid 1px;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.signin-button{
+    color: white;
+    text-decoration: none;
+    background-color: #4C5FD5;
+    font-size: 1.5rem;
+    padding: 0.7rem 2rem;
+    border-radius: 8px;
+}
+.signin-button:hover{
+    background-color: white;
+    color: black;
+    transition:ease-in-out 0.1s;
+}
+.hero-section{
+    height: 400px;
+    background-color: #dadbf1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-banner-text{
+    font-size: 80px;
+    margin-bottom: 2rem;
+}
+.hero-input{
+    background-color: white;
+    max-width: 720px;
+    width: 70%;
+    height: 3rem;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border: black solid 1px;  
+    border-radius: 5px;
+    box-shadow: 6px 10px 24px -13px rgba(0,0,0,0.37);
+}
+.hero-input input{
+    border-style: none;
+    flex-grow: 1;
+    font-size: 1.5rem;
+    padding:0 1rem;
+    outline: none;
+}
+.hero-input img{
+    padding: 0 1rem;
+    height: 60%;
+}
+.inner-content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 8rem 5rem 6rem;
+}
+.content-card{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    max-width: 40%;
+    margin: 2rem;
+    flex-grow: 1;
+}
+.card-text-box{
+    display: flex;
+    width: 100%;
+    padding-left: 1rem;
+    flex-direction: column;
+}
+.card-text-box div{
+    padding: 0.7rem 0;
+}
+.card-text{
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+.bold{
+    font-weight: 600;
+}
+.card-img{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 50px; */
+}
+.card-img img{
+    max-width: 100%;
+    height: auto;
+    max-height: 120px;
+}
+.card-link{
+    color: #4C5FD5; 
+    font-size: 1.2rem;  
+}
+.card-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footer-section{
+    background-color: black;
+    height: 400px;
+    color:white;
+    display: flex;
+    line-height: 1.5rem;
+    position: relative;
+}
+.footer-left-section{
+    padding-left: 8rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    width: 80%;
+
+}
+.footer-section-box{
+    flex-grow:1;
+    max-width: 22%;
+}
+.footer-section-heading{
+    font-size: 1.5rem;
+    padding:1rem 0;
+    font-weight: 600;
+}
+.footer-section-links{
+    font-size: 1rem;
+}
+
+.footer-section-subsection-header{
+    padding-top:1.5rem;
+    font-weight: 600;
+}
+
+.footer-logo-svg{
+    margin-bottom: 1rem;
+}
+.abstract-logo-footer{
+    height: 40px;
+    width: 40px;
+}
+.footer-tnc-section{ 
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    width: 15%;
+    align-self:flex-end;
+    padding-bottom: 4rem;
+    padding-right: 5rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .hero-banner-text{
+        font-size: 40px;
+    }
+    .inner-content-section{
+        flex-direction: column;
+        margin: 2rem 1rem 2rem;    
+    }
+    .content-card{
+        width: 80%;
+    } 
+    .nav-right-side{
+        display: none;
+    
+    }
+    .navbar{
+        padding: 0 2rem;
+    }
+}
